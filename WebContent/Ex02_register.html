@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!--  
+		1. name 속성이 있어야 서버가 request 객체를 통해서 값을 받을 수 있다
+		2. id (css , script:jquery) 사용 
+		3. <input name ="" id="" ..
+	-->
+	<form action="Ex02_form.jsp" method="post">
+		ID:<input type="text" name="userid"><br>
+		PWD:<input type="password" name="userpwd"><br>
+		Hobby:
+		<input type="checkbox" name="hobby" value="baseball">baseball
+		<input type="checkbox" name="hobby" value="soccer">soccer
+		<input type="checkbox" name="hobby" value="basketball">basketball
+		<br>
+		<input type="submit" value="전송하기">
+		
+	
+	</form>
+</body>
+</html>
