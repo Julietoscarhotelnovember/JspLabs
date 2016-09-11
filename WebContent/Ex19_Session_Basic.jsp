@@ -24,7 +24,6 @@ session값은 서버(웹서버)가 부라우저마다 부여하는 고유한 식
 <hr>
 [세션 생성 시간]: <%= formatter.format(time) %>
 <hr>
-<!-- 안돼서 확인 필요 -->
 <%
 	time.setTime(session.getLastAccessedTime());
 %>
