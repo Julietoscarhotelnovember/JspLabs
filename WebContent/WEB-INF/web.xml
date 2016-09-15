@@ -1,35 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
-  <display-name>WebJSPBasic</display-name>
+  <display-name>JspLabs</display-name>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
   </welcome-file-list>
-  
-  <!-- 웹사이트 전체에서 사용가능한 변수 생성: 사용은 application -->
-  <!-- 자바의 properties와 비슷 -->
   <context-param>
-  	<description>기본적인 설명</description>
-  	<param-name>email</param-name>
-  	<param-value>master@admin.com</param-value>
+    <description>기본적인 설명</description>
+    <param-name>email</param-name>
+    <param-value>master@admin.com</param-value>
   </context-param>
-  
   <context-param>
-  	<description>파일 저장 경로</description>
-  	<param-name>FilePath</param-name>
-  	<param-value>c:\\web\\download</param-value>
+    <description>파일 저장 경로</description>
+    <param-name>FilePath</param-name>
+    <param-value>c:\\web\\download</param-value>
   </context-param>
-  
-  <!-- 
-  	공통적인 error 처리 페이지 설정
-  	1. 상태코드값에 따라서(404, 500)
-  	2. 예외객체에 따라서
-  	-->
-  	<!-- <error-page>
-  		<error-code>404</error-code>
-  		<location>/error/error404.jsp</location>
-  	</error-page>
-  	<error-page>
-  		<error-code>500</error-code>
-  		<location>/error/error500.jsp</location>
-  	</error-page> -->
 </web-app>
